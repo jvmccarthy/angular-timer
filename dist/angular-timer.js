@@ -376,8 +376,9 @@ app.factory('I18nService', function() {
             this.language = this.fallback;
         }
 
+        // Require user to set moment locale independently of angular-timer.
         //moment init
-        moment.locale(this.language); //@TODO maybe to remove, it should be handle by the user's application itself, and not inside the directive
+        //moment.locale(this.language); //@TODO maybe to remove, it should be handle by the user's application itself, and not inside the directive
 
         //human duration init, using it because momentjs does not allow accurate time (
         // momentJS: a few moment ago, human duration : 4 seconds ago
